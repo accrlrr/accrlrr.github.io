@@ -1,7 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+  <head>
+    <title>Audio</title>
+  </head>
+  <body style="text-align:center;">
+
+    <script>
+
+      var audio = "";
+
+      function play() {
+	audio.src = "";
+	const jams = ["beyonce", "clave", "cooper", "crunchtime", "eltigre", "jamaica", "mouth", "ocp", "speed"];
+	const random = Math.floor(Math.random() * jams.length);
+        audio = document.getElementById(jams[random]);
+        audio.play();
+      }
+
+    </script>
+
+    <button id="BUTTON" onclick="play()" style="font-size: 35px; font-weight: bold;"> TAP ME OFF, SPENCER </button>
+
+    <p style="text-align:center;"><img src="Spencer.jpg" alt="Spencer tapping off" class="center" style="width:500px;height:500px; padding: 10px;"></p>
+
+    <audio id="beyonce" src="beyonce.mp3"></audio>
+    <audio id="clave" src="clave.mp3"></audio>
+    <audio id="cooper" src="cooper.mp3"></audio>
+    <audio id="crunchtime" src="crunchtime.mp3"></audio>
+    <audio id="eltigre" src="eltigre.mp3"></audio>
+    <audio id="jamaica" src="jamaica.mp3"></audio>
+    <audio id="mouth" src="mouth.mp3"></audio>
+    <audio id="ocp" src="ocp.mp3"></audio>
+    <audio id="speed" src="speed.mp3"></audio>
+
+  </body>
 </html>
