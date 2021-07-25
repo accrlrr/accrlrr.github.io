@@ -7,9 +7,11 @@
 
     <script>
 
-      var audio = "";
-
       function play() {
+	var sounds = document.getElementsByTagName('audio');
+  	for(i=0; i<sounds.length; i++) sounds[i].pause();
+	for(i=0; i<sounds.length; i++) sounds[i].currentTime = 0;
+	var audio = "";
 	audio.src = "";
 	const jams = ["beyonce", "clave", "cooper", "crunchtime", "eltigre", "jamaica", "mouth", "ocp", "speed"];
 	const random = Math.floor(Math.random() * jams.length);
